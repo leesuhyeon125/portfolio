@@ -1,0 +1,875 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+/*reset*/
+*{margin:0; padding: 0;}
+a {color: inherit; text-decoration: none;}
+li {list-style: none;}
+
+/*layout*/
+body {
+    font-size: 16px;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,1);
+    width: 100%;
+    height: 90px;
+    z-index: 200;
+    line-height: 90px;
+}
+
+header .innerHeader {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+header .innerHeader .logo {
+    float: left; 
+}
+
+header .innerHeader .logo img {
+    position: absolute;
+    top: 25px;
+}
+
+header .innerHeader .logo .hover {
+    display: none;
+}
+
+header .innerHeader .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header .innerHeader .gnb {
+    float: left;
+    line-height: 90px;
+    margin-left: 280px;
+    text-align: center;
+}
+
+header .innerHeader .gnb>ul>li {
+    float: left;
+    margin-right: 70px;
+}
+
+header .innerHeader .gnb>ul>li .up {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .innerHeader .tnb {
+    float: left;
+    line-height: 90px;
+}
+
+header .innerHeader .tnb li {
+    float: left;
+    margin-right: 20px;
+}
+
+header .innerHeader .tnb li:last-child {
+    margin-right: 0;
+}
+
+header .innerHeader .tnb li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 16px;
+}
+
+header .innerHeader .btn {
+    display: block;
+    font-size: 17px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    line-height: 2;
+    margin-top: 27px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .3s;
+    float: right;
+    color: #fff;
+}
+
+header .innerHeader .tnb li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+header .innerHeader i {
+    float: right;
+}
+
+header:hover {
+    background: #fff;
+}
+
+header:hover .innerHeader .logo .hover {
+    display: block;
+}
+
+header:hover .innerHeader .gnb>ul>li a{
+    color: #000;
+}
+
+header:hover .innerHeader .tnb li a {
+    color: #000;
+}
+
+header:hover .innerHeader .btn {
+    color: #000;
+    border: 1px solid #999;
+}
+
+header .innerHeader .btn:hover {
+    background: #f0001e;
+    transition: all .3s;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+header .innerHeader .gnb>ul>li a:hover {
+    color: #f0001e;
+    transition: .3s;
+}
+
+header .innerHeader .gnb ul li .dept01 {
+    padding: 10px 0 20px;
+    display: none;
+}
+
+header .innerHeader .gnb ul li ul li {
+    line-height: 2.5;
+    font-size: 16px;
+    
+}
+
+header .innerHeader .gnb ul li ul {
+    display: none;
+}
+
+header .gnbMo {
+    display: none;
+}
+
+.menu_wrap {
+    display: none;
+}
+
+/*section.main*/
+.main {
+    width: 100%;
+    height: 700px;
+    background: url(../img/sub2main-2.png)no-repeat center bottom/cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.main .mainTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation-name: titani;
+    animation-duration: 1s;
+}
+
+.main .mainTitle h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.main .mainTitle hr {
+    width: 80px;
+    height: 7px;
+    margin: 0px auto 50px;
+    background: rgba(255,255,255,0.3);
+    border: 0;
+    position: relative;
+    animation: hrani 1s;
+}
+
+@keyframes hrani {
+    0% {width: 0px;}
+    30% {width: 0px;}
+    100% {width: 80px;}
+}
+
+@keyframes titani {
+    0% {opacity: 0; }
+    30% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.main .mainTitle hr:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .mainTitle hr:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*section.food*/
+
+/*title 애니*/
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.7em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.food {
+    padding: 100px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    color: 000;
+}
+
+.title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 100px;
+}
+
+.food .photo {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.food .photo .img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.food .photo .img img {
+    width: 100%;
+}
+
+.food article {
+    float: left;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.food article h3 {
+    font-size: 27px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.food article ul {
+    line-height: 1.7;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: justify;
+    color: #555;
+    
+}
+.food article ul li {
+    padding: 0px 10px 20px 60px; 
+    position: relative;
+}
+
+.food article ul li p:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #555;
+    position: absolute;
+    top: 12px;
+    left: 40px;
+}
+
+.food article:nth-child(2) ul:after,
+.food article:nth-child(3) ul:after,
+.food article:nth-child(4) ul:after {
+    content: '';
+    width: 2px;
+    height: 190px;
+    background: #e7e7e9;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+header .gnbMo {
+    display: none;
+}
+
+.food article ul li:hover p:before {
+    background: #f0001e;
+}
+
+/*section.client*/
+
+
+.client {
+    padding: 100px;
+    border-top: 1px solid #dbdbdb;
+    background: #fff;
+    overflow: hidden;
+}
+
+.client ul {
+    width: 1300px;
+    margin: 0 auto ;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 85px 10px 0;
+    height: 780px;
+}
+
+.client ul li {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    border-bottom: 7px solid #f0001e;
+}
+
+.client ul li:last-child {
+    margin-right: 0;
+}
+
+.client ul li p.img {
+    width: 100%;
+    height: 258px;
+    overflow: hidden;
+}
+
+.client ul li p.img img {
+    width: 100%;
+}
+
+.client ul li .text {
+    width: 100%;
+    padding: 50px 10px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.client ul li .text h3 {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.client ul li .text h4 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.client ul li .text p {
+    color: #777;
+    font-size: 16px;
+    position: relative;
+}
+
+.client ul li .text p:before {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background: #e7e7e9;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+}
+
+.client ul li:nth-child(1) {
+    margin-top: 200px;
+    transition: all .3s;
+}
+
+.client ul li:nth-child(2) {
+    margin-top: 100px;
+    transition: all .3s;
+}
+.client ul li:nth-child(3) {transition: all .3s;}
+
+/*client 애니*/
+.client ul li:nth-child(1):hover {
+    margin-top: 150px;
+    transition: all .3s;
+}
+.client ul li:nth-child(2):hover {
+    margin-top: 50px;
+    transition: all .3s;
+}
+.client ul li:nth-child(3):hover {
+    margin-top: -50px;
+    transition: all .3s;
+}
+
+
+.client ul li span {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: #f0001e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.client .title p {
+    margin-bottom: 0;
+}
+
+/*section.path*/
+
+/*path p.img 배경색 애니*/
+.path ul li:nth-child(2) .color-change-2x {
+    animation-delay: 0.2s;
+}
+.path ul li:nth-child(3) .color-change-2x {
+    animation-delay: 0.4s;
+}
+.path ul li:nth-child(4) .color-change-2x {
+    animation-delay: 0.6s;
+}
+.path ul li:nth-child(5) .color-change-2x {
+    animation-delay: 0.8s;
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+@keyframes color-change-2x {
+  0% {
+    background: #f0001e;
+  }
+  100% {
+    background: #ffc100;
+  }
+}
+
+.path {
+    padding: 100px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.path ul {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.path ul li {
+    float: left;
+    width: 14%;
+    margin-right: 7.5%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.path ul li:last-child {
+    margin-right: 0;
+}
+
+.path ul li .photo {
+    width: 100%; 
+    margin-bottom: 20px;
+    
+}
+
+.path ul li .photo .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #d61f26;
+    position: relative;
+}
+
+
+.path ul li .photo .img img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.path ul li .text h3 {
+    margin-bottom: 27px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+.path ul li .text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    background: #e7e7e9;
+    position: relative;
+}
+
+footer .inner {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .inner .ftlogo {
+    float: left;
+    line-height: 150px;
+}
+
+footer .inner .copyright {
+    float: left;
+    margin-top: 40px;
+    margin-left: 80px;
+    color: #777;
+}
+
+footer .inner .copyright .list {
+    overflow: hidden;
+}
+
+footer .inner .copyright .list li {
+    float: left;
+    margin-right: 30px;
+}
+
+footer .inner .copyright .list li:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+footer .inner .sns {
+    overflow: hidden;
+    float: right;
+    margin-top: 50px;
+}
+
+footer .inner .sns li {
+    float: left;
+    margin-left: 20px;
+}
+
+footer a.btn {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+
+/*반응형1024*/
+@media screen and (max-width: 1024px) {
+    header {height: 90px;}
+    header .innerHeader {width: 95%; min-width: 90%;}
+    header .gnb,header .tnb, header .innerHeader .btn {display: none;}
+    
+    
+        
+    header .gnbMo {
+       display: block;
+       float: right;
+       margin-top: 25px;
+    }
+        
+    header .gnbMo #bar_btton {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    
+    header:hover .gnbMo #bar_button i{
+    color: #000;
+}
+    
+    header .gnbMo #bar_button i {
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .menu_wrap {
+        position: fixed;
+        display: inline-block;
+        width: 60%;
+        min-height: 100%;
+        height: 100%;
+        z-index: 999;
+        top: 0px;
+        right: -100%;
+        background-color: #fff;
+        z-index: 10000;
+    }
+    .menu_wrap>ul>li i {
+        margin-left: 5px;
+    }
+        
+    .menu_wrap>ul>li>span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #e7e7e9;
+        border-top: 1px solid #e7e7e9;
+        padding: 4% 0 4% 5%;
+        font-size: 30px;
+    }
+    .menu_wrap ul li ul li a {width: 100%; height: 100%; display: block;}
+    
+    .menu_wrap ul li ul {font-size: 25px; padding: 10px 0; background: #e7e7e9}
+    .menu_wrap ul li ul li {padding: 2% 0 2% 5%;}
+    .menu_wrap #close_menu_button {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        font-size: 35px;
+        color: #000;
+        padding: 3% 4%;
+    }
+    #cover_close_button {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 998;
+        display: none;
+    }
+    
+/*    .main*/
+    
+    .food .photo {width: 95%;}
+    .food article ul:after {display: none;}
+    .food article ul li { padding: 0 10px 20px 40px}
+    .food article h3 {font-size: 20px;}
+    .food article ul li p {font-size: 13px;}
+    .food article ul li p:before {top: 5px; left: 20px}
+    .client ul {width: 95%; height: 558px; padding-top: 30px;}
+    .client ul li p.img {height: 157px}
+    .client ul li:nth-child(1) {margin-top: 100px;}
+    .client ul li:nth-child(2) {margin-top: 50px;}
+    .client ul li .text {padding: 30px 10px;}
+    .client ul li .text h3 {font-size: 22px;}
+    .client ul li .text h4 {font-size: 17px;}
+    .client ul li .text p {font-size: 13px;}
+    
+    .path ul {width: 95%;}
+    .path ul li {width: 17%; margin-right: 3.7%;}
+    .path ul li .photo .img {width: 120px; height: 120px;}
+    .path ul li .text h3 {font-size: 22px;}
+    .path ul li .text p {font-size: 13px;}
+    
+    footer .inner {width: 95%; min-width: 90%;}
+    footer .inner .ftlogo img {width: 90%;}
+    footer .inner .copyright {font-size: 14px;}
+    footer .inner .sns {display: none;}
+    footer a.btn img {width: 90%;}
+    
+}
+
+
+/*414*/
+@media screen and (max-width: 414px) {
+    header {width: 100%; height: 60px !important; line-height: 60px;}
+    header .innerHeader {width: 95%; min-width: 90%;}
+    header .innerHeader .logo img {top: 15px; width: 40%;}
+    header .innerHeader .gnb {
+        display: none;
+    }
+    
+    
+    header .gnbMo {
+       margin-top: 15px;
+        
+    }
+    header .gnbMo a {width: 100%; height: 100%;}
+    header .gnbMo #bar_button i {
+        font-size: 25px;
+    }
+    
+    .menu_wrap>ul>li>span {font-size: 17px}
+    .menu_wrap ul li ul {font-size: 14px;}
+    .menu_wrap #close_menu_button {font-size: 20px;}
+    
+/*    .main*/
+    .main .mainTitle {width: 70%}
+    .main .mainTitle h1 {font-size: 40px;}
+    
+    .title {width: 80%; margin: 0 auto;}
+    .title h2 {font-size: 20px; margin-bottom: 10px;}
+    .title p {font-size: 12px;margin-bottom: 20px;}
+    
+    .food {padding: 40px 10px;}
+    .food .photo .img {margin-bottom: 20px;}
+    .food article {
+        float: none; 
+        width: 100%; 
+        text-align: left; 
+        margin-bottom: 10px; 
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .food article:last-child {margin-bottom: 0;}
+    .food article h3 {
+        float: left; 
+        width: 20%; 
+        font-size: 15px;
+        line-height: 1.6;
+        position: relative;
+        color: #f0001e;
+    }
+    
+    .food article ul {float: right; width: 80%;}
+    .food article ul li p br {display: none;}
+    .food article ul li {padding-bottom: 0px;}
+    .food article ul li p:before {width: 5px; height: 5px;}
+    
+    .client {padding: 40px 10px;}
+
+    .client ul {margin: 0 auto; padding: 0; height: auto;}
+    .client ul li {
+        width: 80%; 
+        margin: 60px 0 0 41px;
+        pointer-events: none;
+    }
+    .client ul li:nth-child(1) {margin-top: 60px;}
+    .client ul li:nth-child(2) {margin-top: 60px;}
+    .client ul li .text h3 {font-size: 17px;}
+    .client ul li .text h4 {font-size: 14px;}
+    
+    .path {padding: 40px 10px;}
+    .path ul {width: 85%; margin: 30px auto 0;}
+    .path ul li {
+        float: none; 
+        width: 100%;
+        margin-right: 0%;        
+    }
+    .path ul li .photo {width: 35%; float: left;}
+    .path ul li .text {
+        width: 65%; 
+        float: right;
+        text-align: left;
+        margin-top: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .path ul li .photo .img {width: 80px; height: 80px;}
+    .path ul li .text h3 {margin-bottom: 10px; font-size: 17px;}
+    
+    footer {height: 120px;}
+    footer .inner .ftlogo {
+        float: none;
+        width: 100%;
+        line-height: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    footer .inner .ftlogo img {
+        width: 30%;
+    }
+    footer .inner .copyright {
+        float: none;
+        font-size: 10px;
+        margin: 15px 0px 0px 35px;
+    }
+    footer .inner .copyright .list li:nth-child(1) {
+    margin-bottom: 10px;
+    }
+    footer .inner .copyright .list li:after {
+        height: 10px;
+    }
+    footer a.btn {
+       top: 65px;
+       right: 0px;
+    }
+    footer a.btn p.img {
+        width: 65%;
+    }
+    
+}
+
+

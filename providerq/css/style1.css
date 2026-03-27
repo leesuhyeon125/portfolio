@@ -1,0 +1,721 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+/*reset*/
+*{margin:0; padding: 0;}
+a {color: inherit; text-decoration: none;}
+li {list-style: none;}
+
+/*layout*/
+body {
+    font-size: 16px;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,1);
+    width: 100%;
+    height: 90px;
+    z-index: 200;
+    line-height: 90px;
+}
+
+header .innerHeader {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+header .innerHeader .logo {
+    float: left; 
+}
+
+header .innerHeader .logo img {
+    position: absolute;
+    top: 25px;
+}
+
+header .innerHeader .logo .hover {
+    display: none;
+}
+
+header .innerHeader .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header .innerHeader .gnb {
+    float: left;
+    line-height: 90px;
+    margin-left: 280px;
+    text-align: center;
+}
+
+header .innerHeader .gnb>ul>li {
+    float: left;
+    margin-right: 70px;
+}
+
+header .innerHeader .gnb>ul>li .up {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .innerHeader .tnb {
+    float: left;
+    line-height: 90px;
+}
+
+header .innerHeader .tnb li {
+    float: left;
+    margin-right: 20px;
+}
+
+header .innerHeader .tnb li:last-child {
+    margin-right: 0;
+}
+
+header .innerHeader .tnb li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 16px;
+}
+
+header .innerHeader .btn {
+    display: block;
+    font-size: 17px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    line-height: 2;
+    margin-top: 27px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .3s;
+    float: right;
+    color: #fff;
+}
+
+header .innerHeader .tnb li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+header .innerHeader i {
+    float: right;
+}
+
+header:hover {
+    background: #fff;
+}
+
+
+
+header:hover .innerHeader .logo .hover {
+    display: block;
+}
+
+header:hover .innerHeader .gnb>ul>li a{
+    color: #000;
+}
+
+header:hover .innerHeader .tnb li a {
+    color: #000;
+}
+
+header:hover .innerHeader .btn {
+    color: #000;
+    border: 1px solid #999;
+}
+
+header .innerHeader .btn:hover {
+    background: #f0001e;
+    transition: all .3s;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+header .innerHeader .gnb>ul>li a:hover {
+    color: #f0001e;
+    transition: .3s;
+}
+
+header .innerHeader .gnb ul li .dept01 {
+    padding: 10px 0 20px;
+    display: none;
+}
+
+header .innerHeader .gnb ul li ul li {
+    line-height: 2.5;
+    font-size: 16px;
+    
+}
+
+header .innerHeader .gnb ul li ul {
+    display: none;
+}
+
+header .gnbMo {
+    display: none;
+}
+
+.menu_wrap {
+    display: none;
+}
+/*section.main*/
+.main {
+    width: 100%;
+    height: 700px;
+    background: url(../img/sub1main-1.png)no-repeat center/cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.main .mainTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation-name: titani;
+    animation-duration: 1s;
+}
+
+.main .mainTitle h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.main .mainTitle hr {
+    width: 80px;
+    height: 7px;
+    margin: 0px auto 50px;
+    background: rgba(255,255,255,0.3);
+    border: 0;
+    position: relative;
+    animation: hrani 1s;
+}
+
+@keyframes hrani {
+    0% {width: 0px;}
+    30% {width: 0px;}
+    100% {width: 80px;}
+}
+
+@keyframes titani {
+    0% {opacity: 0; }
+    30% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.main .mainTitle hr:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .mainTitle hr:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*section.intro*/
+
+/*title 애니*/
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.7em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.intro {
+    padding: 100px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    color: 000;
+}
+
+.title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 100px;
+    line-height: 1.5;
+}
+
+.intro ul {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.intro ul li {
+    float: left;
+    width: 20%;
+    margin-right: 6.6%;
+}
+
+.intro ul li:last-child {
+    margin-right: 0;
+}
+
+.intro ul li .photo {
+    position: relative;
+}
+
+.intro ul li .photo .title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: #f0001e;
+    font-weight: bold;
+}
+
+.intro ul li .img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid #f0001e;
+    margin: 0 auto 30px;;
+    position: relative;
+}
+
+.intro ul li .img img {
+    width: 40%;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro ul li .text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    line-height: 1.3;
+}
+
+/*section.mission*/
+.mission {
+    position: relative;
+}
+
+.mission .imgBox {
+    width: 100%;
+    height: 540px;
+    background: url(../img/mission5.jpg)no-repeat center /cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    z-index: -1;
+}
+
+.mission .title {
+    background: #fff;
+    width: 1000px;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 300px auto 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.mission .title .photo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mission .title .photo .img {
+    width: 100%;
+    height: 450px;
+}
+
+.mission .title .photo .img img {
+    width: 100%;
+}
+
+/*section.vision*/
+.vision {
+    padding: 100px;
+}
+
+.vision ul {
+    overflow: hidden;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.vision ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.vision ul li .img {
+    width: 300px;
+}
+
+.vision ul li .img {
+    width: 100%;
+}
+
+.vision ul li h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #f0001e;
+    padding: 30px;
+    font-family: 'Hind', sans-serif;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    background: #e7e7e9;
+    position: relative;
+}
+
+footer .inner {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .inner .ftlogo {
+    float: left;
+    line-height: 150px;
+}
+
+footer .inner .copyright {
+    float: left;
+    margin-top: 40px;
+    margin-left: 80px;
+    color: #777;
+}
+
+footer .inner .copyright .list {
+    overflow: hidden;
+}
+
+footer .inner .copyright .list li {
+    float: left;
+    margin-right: 30px;
+}
+
+footer .inner .copyright .list li:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+footer .inner .sns {
+    overflow: hidden;
+    float: right;
+    margin-top: 50px;
+}
+
+footer .inner .sns li {
+    float: left;
+    margin-left: 20px;
+}
+
+footer a.btn {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+
+
+/*반응형 1024*/
+@media screen and (max-width: 1024px) {
+    header {height: 90px;}
+    header .innerHeader {width: 95%; min-width: 90%;}
+    header .gnb,header .tnb, header .innerHeader .btn {display: none;}
+    
+    
+        
+    header .gnbMo {
+       display: block;
+       float: right;
+       margin-top: 25px;
+    }
+        
+    header .gnbMo #bar_btton {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    
+    header:hover .gnbMo #bar_button i{
+    color: #000;
+}
+    
+    header .gnbMo #bar_button i {
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .menu_wrap {
+        position: fixed;
+        display: inline-block;
+        width: 60%;
+        min-height: 100%;
+        height: 100%;
+        z-index: 999;
+        top: 0px;
+        right: -100%;
+        background-color: #fff;
+        z-index: 10000;
+    }
+    .menu_wrap>ul>li i {
+        margin-left: 5px;
+    }
+        
+    .menu_wrap>ul>li>span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #e7e7e9;
+        border-top: 1px solid #e7e7e9;
+        padding: 4% 0 4% 5%;
+        font-size: 30px;
+    }
+    .menu_wrap ul li ul li a {width: 100%; height: 100%; display: block;}
+    
+    .menu_wrap ul li ul {font-size: 25px; padding: 10px 0; background: #e7e7e9}
+    .menu_wrap ul li ul li {padding: 2% 0 2% 5%;}
+    .menu_wrap #close_menu_button {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        font-size: 35px;
+        color: #000;
+        padding: 3% 4%;
+    }
+    #cover_close_button {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 998;
+        display: none;
+    }
+    
+    .intro ul {width: 95%;}
+    .intro ul li .img {width: 130px; height: 130px;}
+    .intro ul li .photo .title {font-size: 20px;}
+    .intro ul li .text {font-size: 14px;}
+    .mission .title {
+        width: 80%; 
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .mission .title .photo p.img {margin-bottom: 0;}
+    .vision ul {width: 95%;}
+    .vision ul li {
+        width: 50%;
+    }
+    .vision ul li .img {width: 50%; margin: 0 auto;}
+    .vision ul li .img img{width: 100%;}
+    .vision ul li h3 {font-size: 20px;}
+    
+    footer .inner {width: 95%; min-width: 90%;}
+    footer .inner .ftlogo img {width: 90%;}
+    footer .inner .copyright {font-size: 14px;}
+    footer .inner .sns {display: none;}
+    footer a.btn img {width: 90%;}
+    
+}
+
+
+/*414*/
+@media screen and (max-width: 414px) {
+    header {width: 100%; height: 60px !important; line-height: 60px;}
+    header .innerHeader {width: 95%; min-width: 90%;}
+    header .innerHeader .logo img {top: 15px; width: 40%;}
+    header .innerHeader .gnb {
+        display: none;
+    }
+    
+    
+    header .gnbMo {
+       margin-top: 15px;
+        
+    }
+    header .gnbMo a {width: 100%; height: 100%;}
+    header .gnbMo #bar_button i {
+        font-size: 25px;
+    }
+    
+    .menu_wrap>ul>li>span {font-size: 17px}
+    .menu_wrap ul li ul {font-size: 14px;}
+    .menu_wrap #close_menu_button {font-size: 20px;}
+    
+/*    main*/
+    .main .mainTitle {width: 70%}
+    .main .mainTitle ul li .img img {width: 90%;}
+    .main .mainTitle h1 {font-size: 18px;}
+    
+    .title {width: 80%; margin: 0 auto;}
+    .title h2 {font-size: 20px; margin-bottom: 30px;}
+    .title>p {display: none;}
+    .title p br {display: none;}
+    
+    .intro {padding: 50px 10px;}
+    .intro ul {
+        width: 90%; 
+        height: 165px; 
+        padding: 10px 0 10px 20px; 
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .intro ul li {float: none; width: 100%;}
+    .intro ul li .photo {float: left; width: 30%; position: relative;}
+    .intro ul li .photo:before {
+        content: '';
+        background: #f0001e;;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 15px;
+    }
+    .intro ul li .text {
+        float: right; 
+        width: 70%; 
+        font-size: 12px; 
+        text-align: left;
+    }
+    
+    .intro ul li .img {display: none;}
+    .intro ul li .img img{direction: none;}
+    .intro ul li .photo .title {
+        margin: 10px 0 10px 10px; 
+        font-size: 14px; 
+        text-align: left;
+    }
+    .intro ul li .text br {display: none;}
+    
+    .mission .imgBox {
+        height: 300px;
+        top: -200px;
+    }
+    .mission .title {
+        margin: 150px auto 0px;
+        padding: 40px;
+    }
+    .mission .title .photo .img {height: auto;}
+    
+    .vision {padding: 50px 10px;}
+    .vision ul li {
+        float: none; 
+        width: 100%; 
+        margin-bottom: 15px; 
+        overflow: hidden;
+    }
+    .vision ul li .img {float: left; width: 30%;}
+    .vision ul li h3 {
+        float: right; 
+        width: 70%; 
+        padding: 0;
+        font-size: 14px;
+        margin: 15px 0;
+        text-align: left;
+    }
+    .vision ul li:nth-child(2) h3 {
+        margin: 20px 0;
+    }
+    .vision ul li .img img {width: 60%;}
+    
+    footer {height: 120px;}
+    footer .inner .ftlogo {
+        float: none;
+        width: 100%;
+        line-height: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    footer .inner .ftlogo img {
+        width: 30%;
+    }
+    footer .inner .copyright {
+        float: none;
+        font-size: 10px;
+        margin: 15px 0px 0px 35px;
+    }
+    footer .inner .copyright .list li:nth-child(1) {
+    margin-bottom: 10px;
+    }
+    footer .inner .copyright .list li:after {
+        height: 10px;
+    }
+    footer a.btn {
+       top: 65px;
+       right: 0px;
+    }
+    footer a.btn p.img {
+        width: 65%;
+    }
+    
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로바이더큐 | 회원가입</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>  
+    <script type="text/javascript" src="js/script1.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                  <a href="index.html"><img src="img/whitelogo.png" alt="프로바이더큐"><img src="img/hoverlogo.png" alt="프로바이더큐" class="hover"></a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="menu01">
+                        <li><a href="company.html" class="up">회사소개</a>
+                          <ul class="dept01">
+                            <li><a href="company.html">providerQ</a></li>
+                            <li>투자정보</li>
+                            <li>오시는길</li>
+                          </ul>
+                        </li>
+                        
+                        <li><a href="business.html" class="up">사업영역</a>
+                          <ul class="dept01">
+                              <li><a href="business.html">식자재 유통사업</a></li>
+                              <li>푸드서비스 사업</li>
+                              <li>글로벌 사업</li>
+                          </ul>
+                        </li>
+                        
+                        <li><a href="infra.html" class="up">역량·인프라</a>
+                          <ul class="dept01">
+                             <li><a href="infra.html">식품안전</a></li>
+                             <li>상품구매</li>
+                             <li>물류 시스템</li>
+                             <li>고객서비스</li> 
+                          </ul>
+                        </li>
+                        
+                        <li><a href="recruit.html" class="up">채용·지원하기</a>
+                          <ul class="dept01">
+                              <li><a href="recruit.html">인사정보</a></li>
+                              <li>채용정보</li>
+                          </ul>
+                        </li>
+                    </ul>
+                </nav>
+                    <nav class="tnb">
+                        <ul>
+                            <li><a href="#">고객센터  </a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li></li>
+                        </ul>
+                    </nav> 
+                    <a href="join.html" class="btn">회원가입</a>   
+                    <nav class="gnbMo"><a href="javascript:void(0);" onclick="barButtonAction();" id="bar_button"><i class="fa fa-bars"></i></a></nav>        
+            </div>
+            
+        </header>
+        
+        <div class="menu_wrap">
+           <ul>
+               <li>
+               <span>회사소개<i class="fas fa-sort-down"></i></span>
+               <ul>
+                   <li><a href="company.html">providerQ</a></li>
+                   <li>투자정보</li>
+                   <li>오시는 길</li>
+               </ul>
+               </li>
+               <li>
+               <span>사업영역<i class="fas fa-sort-down"></i></span>
+               <ul>
+                   <li><a href="business.html">식자재 유통사업</a></li>
+                   <li>푸드서비스 사업</li>
+                   <li>글로벌 사업</li>
+               </ul>
+               </li>
+               <li>
+               <span>역량·인프라<i class="fas fa-sort-down"></i></span>
+               <ul>
+                   <li><a href="infra.html">식품안전</a></li>
+                   <li>상품구매</li>
+                   <li>물류 시스템</li>
+                   <li>고객서비스</li>
+               </ul>
+               </li>
+               <li>
+               <span>채용·지원하기<i class="fas fa-sort-down"></i></span>
+               <ul>
+                   <li><a href="recruit.html">인사정보</a></li>
+                   <li>채용정보</li>
+               </ul>
+               </li>
+               <li><span><a href="join.html">회원가입</a></span></li>
+           </ul>
+            <a href="javascipt:void(0);" id="close_menu_button" onclick="hideMenu();"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </div>
+        <a href="javascript:void(0);" id="cover_close_button" onclick="hideMenu();"></a>
+           
+            <div class="form">
+                <h1>회원가입</h1>
+                <p>providerQ 회원가입을 환영합니다.</p>
+                
+                    <div class="photo">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <i class="far fa-file-alt"></i>
+                                    </li>
+                                    <li><p>이용약관</p></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li>
+                               
+                                <ul>
+                                    <li>
+                                        <i class="far fa-edit"></i>
+                                    </li>
+                                    <li><p>회원정보입력</p></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <i class="far fa-check-circle"></i>
+                                    </li>
+                                    <li><p>가입완료</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                
+                <table border="1">
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>이름
+                        </th>
+                        <td>
+                            <label for="user_name">
+                                <input type="text" id="user_name">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>아이디
+                        </th>
+                        <td>
+                            <label for="user_id">
+                                <input type="text" id="user_id">
+                            </label>
+                            <input type="button" value="중복확인" onclick="dupCheck();">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>비밀번호
+                        </th>
+                        <td>
+                            <label for="pw">
+                                <input type="password" id="pw" maxlength="20">
+                            </label>공백 없는 영문, 숫자 포함 6~20자
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>비밀번호 확인
+                        </th>
+                        <td>
+                            <label for="rpw">
+                                <input type="password" id="rpw" maxlength="20">
+                            </label>비밀번호 확인을 위해 한번 더 입력하세요.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>성별
+                        </th>
+                        <td>
+                            <label>
+                               <input type="radio" name="sex" value="male">남자
+                            </label>
+                            <label>
+                            <input type="radio" name="sex" value="female">여자
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            <i class="fas fa-check"></i>주소
+                        </th>
+                        <td>
+                            <label for="adress">
+                                <input type="text" id="adress">
+                            </label>
+                                <input type="button" value="주소찾기"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>휴대폰번호
+                        </th>
+                        <td>
+                            <select name="phone">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="017">017</option>
+                                <option value="016">016</option>
+                            </select>
+                        - <input type="number">
+                        - <input type="number"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>이메일
+                        </th>
+                        <td>
+                            <input type="text"> @ 
+                            <input type="text">
+                            <select name="email">
+                                <option value="email">직접입력</option>
+                                <option value="email">naver.com</option>
+                                <option value="email">daum.net</option>
+                                <option value="email">nate.com</option>
+                                <option value="email">gmail.com</option>
+                                <option value="email">dreamwiz.com</option>
+                                <option value="email">yahoo.co.kr</option>
+                                <option value="email">empal.com</option>
+                                <option value="email">korea.com</option>
+                                <option value="email">chol.com</option>
+                                <option value="email">paran.com</option>
+                                <option value="email">freechal.com</option>
+                                <option value="email">hotmail.com</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>SMS수신여부
+                        </th>
+                        <td>
+                            <input type="checkbox" name="sms" value="Y">SMS를 수신하겠습니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i class="fas fa-check"></i>이메일 수신여부
+                        </th>
+                        <td>
+                            <input type="checkbox" name="mail" value="Y">정보메일을 수신하겠습니다.
+                        </td>
+                    </tr>
+                </table>
+                <div class="btn">
+                           <a href="#">회원가입</a>
+                           <a href="#">취소</a>
+                </div>
+            </div>
+            
+            
+       <footer>
+            <div class="inner">
+                <h2 class="ftlogo">
+                    <img src="img/ftlogo.png" alt="프로바이더큐">
+                </h2>
+                <ul class="copyright">
+                    <li>
+                        <ul class="list">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">뉴스레터 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    COPYRIGHT 2018 PROVIDERQ CORP, ALL RIGHTS RESERVED
+                    </li>
+                </ul>
+                <ul class="sns">
+                    <li>
+                        <a href="#">
+                            <p class="img"><img src="img/insta.png" alt="인스타그램"></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="img">
+                                <img src="img/kakao.png" alt="카카오톡">
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="sub5.html" class="btn">
+                <p class="img">
+                    <img src="img/topbtn.png" alt="top버튼">
+                </p>
+            </a>
+        </footer>     
+                    
+    </div>
+</body>
+</html>
