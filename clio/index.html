@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>클리오 코스메틱스</title>
+        <link rel="icon" href="favicon-32x32.png" type="image/png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div id="notice_popup" class="popup_wrap">
+            <div class="popup_content">
+                <div class="popup_header">
+                    <h3>NOTICE</h3>
+                </div>
+                <div class="popup_body">
+                    <p class="title">포트폴리오 용도 안내 및 저작권 공지</p>
+                    <div class="info_box">
+                        <p>본 사이트는 상업적 목적이 아닌 <strong>개인 포트폴리오</strong>를 목적으로 제작된 페이지입니다.</p>
+                        <p>사용된 모든 이미지 및 브랜드 아이덴티티의 저작권은 <strong>(주)클리오(CLIO)</strong>에 있음을 밝힙니다.</p>
+                    </div>
+                    <p class="sub_txt">본 프로젝트는 UI/UX 리뉴얼 및 웹 퍼블리싱 역량을 증명하기 위해 제작되었습니다.</p>
+                </div>
+                <div class="popup_footer">
+                    <label>
+                        <input type="checkbox" id="today_check"> 오늘 하루 동안 열지 않기
+                    </label>
+                    <button type="button" onclick="closePopup()">닫기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="skip_menu">
+            <a href="#gnb">주요 메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+
+        <div class="wrap">
+            <header id="header" class="header">
+                <h1 class="logo">
+                    <a href="./">
+                        <img src="images/logo.png" alt="클리오 코스메틱스">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hide">사이트 메뉴</h2>
+                    <ul class="menu1">
+                        <li>
+                            <a href="#none">
+                                COMPANY
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="vision.html">경영이념 비전</a>
+                                </li>
+                                <li>
+                                    <a href="history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="ceo.html">CEO 메세지</a>
+                                </li>
+                                <li>
+                                    <a href="ci.html">CI</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                BRANDS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="clio.html">클리오</a>
+                                </li>
+                                <li>
+                                    <a href="peripera.html">페리페라</a>
+                                </li>
+                                <li>
+                                    <a href="goodal.html">구달</a>
+                                </li>
+                                <li>
+                                    <a href="dermatory.html">더마토리</a>
+                                </li>
+                                <li>
+                                    <a href="type_no.html">타입넘버</a>
+                                </li>
+                                <li>
+                                    <a href="simplain.html">심플레인</a>
+                                </li>
+                                <li>
+                                    <a href="healing_bird.html">힐링버드</a>
+                                </li>
+                                <li>
+                                    <a href="truerx.html">트루알엑스</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                RECRUIT
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="culture.html">CLIO문화</a>
+                                </li>
+                                <li>
+                                    <a href="recruit.html">채용안내</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                INVESTORS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="fininfo.html">재무정보</a>
+                                </li>
+                                <li>
+                                    <a href="publicinfo.html">공시정보</a>
+                                </li>
+                                <li>
+                                    <a href="ir.html">IR 자료</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                SUPPORT
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="partner_write.html">제휴 협력 문의</a>
+                                </li>
+                                <li>
+                                    <a href="report_info.html">온라인 제보</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                NEWS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="news.html">뉴스</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <aside class="top_menu">
+                    <h2 class="hide">유틸메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="#none" class="top_menu1">
+                                
+                                언어 지원 서비스
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#none">KOREAN</a>
+                                </li>
+                                <li>
+                                    <a href="index_en.html">ENGLISH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://clubclio.co.kr/" class="top_menu2" target="_blank">클럽클리오 바로가기</a>
+                        </li>
+                    </ul>
+                </aside>
+                <button class="m_menu_btn" aria-label="메뉴 열기">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </header>
+            <main id="main" class="main">
+                <section class="main_img">
+                    <div class="swiper gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container main_img_vision_bg"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container main_img_shopping_bg"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-container main_img_recruit_bg"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main_img_txt">
+                        <div class="txt_item on">
+                            <h3>세상을 채울 클리오의 비전</h3>
+                            <p>전 세계 모든 파우치에 클리오가 담기는 그날까지, 우리의 혁신은 계속됩니다.</p>
+                        </div>
+                        <div class="txt_item">
+                            <h3>쇼핑, 그 이상의 가치</h3>
+                            <p>클리오 공식몰에서 당신만의 자신감을 완성하세요.</p>
+                        </div>
+                        <div class="txt_item">
+                            <h3>미래를 열어갈 성장 파트너</h3>
+                            <p>클리오와 함께 글로벌 뷰티의 새로운 가치를 만듭니다.</p>
+                        </div>
+                    </div>
+                    <div class="wrap_thumb_layout">
+                        <div class="swiper-pagination main-pagination"></div>
+                        <div class="swiper gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container main_img_vision">
+                                        <a href="vision.html">
+                                            <img src="images/main_slide_1.jpg" alt="클리오의 비전">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container main_img_shopping">
+                                        <a href="https://clubclio.co.kr/" target="_blank"><img src="images/main_slide_2.jpg" alt="클리오 클럽몰"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container main_img_recruit">
+                                        <a href="recruit.html"><img src="images/main_slide_3.png" alt="인재채용"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="vision">
+                    <div class="txt_wrap">
+                        <h2 class="hide">기업이념</h2>
+                        <h3>Global Market Leader</h3>
+                        <p class="sub_title">항상 새로운 도전과 혁신으로 시장을 선도해 나갑니다.</p>
+                        <p class="txt">클리오는 끊임없는 도전으로 시장을 선도하며, 고객에 대한 깊은 이해와 소통을 바탕으로 최고의 품질과 서비스를
+                            제공합니다. 전 세계 모든 고객의 파우치에 클리오가 담기는 그날까지, 전 세계 고객에게 더 나은 가치를 제공하는 기업으로 성장하겠습니다.</p>
+                    </div>
+                    <div class="img_wrap">
+                        <h3 class="hide">회사의 3대 기업가치</h3>
+                        <div class="value1">
+                            <div class="img_box"><img src="images/gml_challenge.svg" alt="도전하자"></div>
+                            <p>Challenge</p>
+                        </div>
+                        <div class="value2">
+                            <div class="img_box"><img src="images/gml_connection.svg" alt="소통하자"></div>
+                            <p>Connection</p>
+                        </div>
+                        <div class="value3">
+                            <div class="img_box"><img src="images/gml_enjoyment.svg" alt="즐기자"></div>
+                            <p>Ejoyment</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="brands">
+                    <div class="txt_wrap">
+                        <div class="txt_left">
+                            <h2>Brands</h2>
+                            <p>클리오에서 운영하고 있는 브랜드들을 소개해드립니다.</p>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="clio.html" class="more_btn">더보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="clio.html"><img src="images/index_brands_clio.png" alt="클리오"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="peripera.html"><img src="images/index_brands_peripera.png" alt="페리페라"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="goodal.html"><img src="images/index_brands_goodal.png" alt="구달"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="dermatory.html"><img src="images/index_brands_dermatory.png" alt="더마토리"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="type_no.html"><img src="images/index_brands_typeno.png" alt="타입넘버"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="simplain.html"><img src="images/index_brands_simplain.png" alt="심플레인"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="healing_bird.html"><img src="images/index_brands_healingbird.png" alt="힐링버드"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="truerx.html"><img src="images/index_brands_truerx.png" alt="트루알엑스"></a>
+                            </div>
+
+                        </div>
+                        <button class="brands_prev_btn"><img src="images/prev_btn_white.svg" alt="이전"></button>
+                        <button class="brands_next_btn"><img src="images/next_btn_white.svg" alt="다음"></button>
+                    </div>
+
+                </section>
+                
+                <section class="news">
+    <div class="news_left">
+        <h2>News</h2>
+        <p>클리오의 새로운 소식과 즐거운 이야기들로 고객 여러분을 찾아갑니다.</p>
+        <div class="news_tab_btn_container" role="tablist">
+            <button type="button" class="news_tabs on" role="tab" aria-selected="true" aria-controls="NewsTab1">
+                <img src="images/company_icon_white.svg" alt="하얀색 기업 아이콘" class="img_white">
+                <img src="images/company_icon.svg" alt="검은색 기업 아이콘" class="img_black">
+                기업
+            </button>
+            <button type="button" class="news_tabs" role="tab" aria-selected="false" aria-controls="NewsTab2">
+                <img src="images/esg_icon.svg" alt="검은색 ESG 아이콘" class="img_black">
+                <img src="images/esg_icon_white.svg" alt="하얀색 ESG 아이콘" class="img_white">
+                ESG
+            </button>
+        </div>
+    </div>
+
+    <div class="news_right pc_view_area">
+        <div class="company_news news_tab on pc_box" id="NewsTab1" role="tabpanel">
+            <article class="company_news1">
+                <a href="board_detail.html?type=news&id=0">
+                    <div class="img_box"><img src="images/new_company_1.jpg" alt="평등가족부의 ‘가족친화인증 기업’ 유효기간 연장을 승인받은 클리오"></div>
+                    <h3>클리오, '가족친화기업' 인증 유효기간 연장</h3>
+                    <p>2025.12.03</p>
+                </a>
+            </article>
+            <article class="company_news2">
+                <a href="board_detail.html?type=news&id=1">
+                    <div class="img_box"><img src="images/new_company_2.png" alt="클리오라이프케어 트루알엑스"></div>
+                    <h3>클리오, 건강기능식품 자회사 '클리오라이프케어' 성장 본격화</h3>
+                    <p>2025.11.27</p>
+                </a>
+            </article>
+            <article class="company_news3">
+                <a href="board_detail.html?type=news&id=2">
+                    <div class="img_box"><img src="images/new_company_3.png" alt="클리오 2024 서스틴베스트 ESG 평가 최고 등급 AA 획득"></div>
+                    <h3>클리오, 서스틴베스트 ESG 평가 최고등급 'AA' 획득</h3>
+                    <p>2025.11.25</p>
+                </a>
+            </article>
+            <article class="company_news4">
+                <a href="board_detail.html?type=news&id=3">
+                    <div class="img_box"><img src="images/new_company_4.jpg" alt="클리오×국가유산청 협업 상품"></div>
+                    <h3>클리오 X 국가유산청,'K-헤리티지 에디션' 물량 완판</h3>
+                    <p>2025.09.17</p>
+                </a>
+            </article>
+        </div>
+
+        <div class="esg_news news_tab pc_box" id="NewsTab2" role="tabpanel">
+            <article class="esg_news1">
+                <a href="board_detail.html?type=news&id=4">
+                    <div class="img_box"><img src="images/new_esg_1.png" alt=""></div>
+                    <h3>국가유산과 K뷰티의 결합, 국가유산청-㈜클리오 업무협약 체결</h3>
+                    <p>2025.08.22</p>
+                </a>
+            </article>
+            <article class="esg_news2">
+                <a href="board_detail.html?type=news&id=5">
+                    <div class="img_box"><img src="images/new_esg_2.jpg" alt=""></div>
+                    <h3>페리페라, 사회혁신기업 브랜드 ‘히즈빈스’와 NCT 도영-정우 생일카페 진행</h3>
+                    <p>2025.03.11</p>
+                </a>
+            </article>
+            <article class="esg_news3">
+                <a href="board_detail.html?type=news&id=6">
+                    <div class="img_box"><img src="images/new_esg_3.png" alt=""></div>
+                    <h3>클리오, ‘글로벌 지속가능 기업 60’ 3년 연속 선정</h3>
+                    <p>2025.03.07</p>
+                </a>
+            </article>
+            <article class="esg_news4">
+                <a href="board_detail.html?type=news&id=07">
+                    <div class="img_box"><img src="images/new_esg_4.png" alt=""></div>
+                    <h3>페리페라, 말티즈 아카이브 콜라보 판매수익금 동물자유연대에 기부</h3>
+                    <p>2024.11.30</p>
+                </a>
+            </article>
+        </div>
+    </div>
+
+    <div class="mo_swiper_container">
+    <div class="mo_news_wrap on swiper" id="MoTab1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=0">
+                    <div class="img_box">
+                        <img src="images/new_company_1.jpg" alt="평등가족부의 ‘가족친화인증 기업’ 유효기간 연장을 승인받은 클리오">
+                    </div>
+                    <h3>클리오, '가족친화기업' 인증 유효기간 연장</h3>
+                    <p>2025.12.03</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=1">
+                    <div class="img_box">
+                        <img src="images/new_company_2.png" alt="클리오라이프케어 트루알엑스">
+                    </div>
+                    <h3>클리오, 건강기능식품 자회사 '클리오라이프케어' 성장 본격화</h3>
+                    <p>2025.11.27</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=2">
+                    <div class="img_box">
+                        <img src="images/new_company_3.png" alt="클리오 2024 서스틴베스트 ESG 평가 최고 등급 AA 획득">
+                    </div>
+                    <h3>클리오, 서스틴베스트 ESG 평가 최고등급 'AA' 획득</h3>
+                    <p>2025.11.25</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=3">
+                    <div class="img_box">
+                        <img src="images/new_company_4.jpg" alt="클리오×국가유산청 협업 상품">
+                    </div>
+                    <h3>클리오 X 국가유산청,'K-헤리티지 에디션' 물량 완판</h3>
+                    <p>2025.09.17</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mo_news_wrap swiper" id="MoTab2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=4">
+                    <div class="img_box">
+                        <img src="images/new_esg_1.png" alt="">
+                    </div>
+                    <h3>국가유산과 K뷰티의 결합, 국가유산청-㈜클리오 업무협약 체결</h3>
+                    <p>2025.08.22</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=5">
+                    <div class="img_box">
+                        <img src="images/new_esg_2.jpg" alt="">
+                    </div>
+                    <h3>페리페라, 사회혁신기업 브랜드 ‘히즈빈스’와 NCT 도영-정우 생일카페 진행</h3>
+                    <p>2025.03.11</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=6">
+                    <div class="img_box">
+                        <img src="images/new_esg_3.png" alt="">
+                    </div>
+                    <h3>클리오, ‘글로벌 지속가능 기업 60’ 3년 연속 선정</h3>
+                    <p>2025.03.07</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="board_detail.html?type=news&id=07">
+                    <div class="img_box">
+                        <img src="images/new_esg_4.png" alt="">
+                    </div>
+                    <h3>페리페라, 말티즈 아카이브 콜라보 판매수익금 동물자유연대에 기부</h3>
+                    <p>2024.11.30</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+                
+                
+    
+                
+                
+                <section class="cooperation">
+                    <div class="cooperation_bg"></div>
+                    <div class="cooperation_box">
+                        <h2>Better Together, Grow with Clio</h2>
+                        <p>
+                            클리오의 전문 역량과 파트너사의 아이디어를 더해 새로운 가치를 만듭니다.
+                            <br>
+                            글로벌 뷰티 시장을 선도할 혁신적인 비즈니스 제휴를 기다립니다.
+                        </p>
+                        <a href="partner_write.html">제휴/협력 문의</a>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" id="footer">
+                <button type="button" id="backToTop" class="back_to_top">
+                    <span>Top</span>
+                </button>
+                <div class="footer_top">
+                    <h2 class="hide">사이트 이용안내</h2>
+                    <div class="term">
+                        <h3 class="hide">약관 및 정책</h3>
+                        <ul>
+                            <li>
+                                <a href="terms.html">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">개인정보 처리방침</a>
+                            </li>
+                            <li>
+                                <a href="sitemap.html">사이트맵</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family_site">
+
+                        <h3>
+                            <button class="family_btn">Family Site</button>
+                        </h3>
+
+                        <ul>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/1">클리오</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/2">페리페라</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/3">구달</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/5">더마토리</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/13">타입넘버</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/14">심플레인</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/4">힐링버드</a>
+                            </li>
+                            <li>
+                                <a href="https://clubclio.co.kr/shop/brandsList/all/brand/12">트루알엑스</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>서울시 성동구 왕십리로 66 (주)클리오</p>
+                    <p>고객상담실 : 080-080-1510</p>
+                    <p class="opening_hours">
+                        운영시간 : 월~금: 10시~17시(점심시간:12시~14시), 주말 공휴일 휴무
+                    </p>
+                    <p>ⓒ Since 1996 CLIO COSMETICS, All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+
+
+    
+    </body>
+
+</html>

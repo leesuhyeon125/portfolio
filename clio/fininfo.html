@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재무정보 | 클리오 코스메틱스</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+    
+    
+</head>
+<body>
+    <div class="skip_menu">
+        <a href="#none">주요 메뉴 바로가기</a>
+        <a href="#none">본문 바로가기</a>
+    </div>
+    <div class="wrap">
+        <header id="header" class="header">
+                <h1 class="logo">
+                    <a href="./">
+                        <img src="images/logo.png" alt="클리오 코스메틱스">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hide">사이트 메뉴</h2>
+                    <ul class="menu1">
+                        <li>
+                            <a href="#none">
+                                COMPANY
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="vision.html">경영이념 비전</a>
+                                </li>
+                                <li>
+                                    <a href="history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="ceo.html">CEO 메세지</a>
+                                </li>
+                                <li>
+                                    <a href="ci.html">CI</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                BRANDS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="clio.html">클리오</a>
+                                </li>
+                                <li>
+                                    <a href="peripera.html">페리페라</a>
+                                </li>
+                                <li>
+                                    <a href="goodal.html">구달</a>
+                                </li>
+                                <li>
+                                    <a href="dermatory.html">더마토리</a>
+                                </li>
+                                <li>
+                                    <a href="type_no.html">타입넘버</a>
+                                </li>
+                                <li>
+                                    <a href="simplain.html">심플레인</a>
+                                </li>
+                                <li>
+                                    <a href="healing_bird.html">힐링버드</a>
+                                </li>
+                                <li>
+                                    <a href="truerx.html">트루알엑스</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                RECRUIT
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="culture.html">CLIO문화</a>
+                                </li>
+                                <li>
+                                    <a href="recruit.html">채용안내</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                INVESTORS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="fininfo.html">재무정보</a>
+                                </li>
+                                <li>
+                                    <a href="publicinfo.html">공시정보</a>
+                                </li>
+                                <li>
+                                    <a href="ir.html">IR 자료</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                SUPPORT
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="partner_write.html">제휴 협력 문의</a>
+                                </li>
+                                <li>
+                                    <a href="report_info.html">온라인 제보</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                NEWS
+                            </a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="news.html">뉴스</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <aside class="top_menu">
+                    <h2 class="hide">유틸메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="#none" class="top_menu1">언어 지원 서비스</a>
+                            <ul>
+                                <li>
+                                    <a href="#none">KOREAN</a>
+                                </li>
+                                <li>
+                                    <a href="#none">ENGLISH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://clubclio.co.kr/" class="top_menu2" target="_blank">클럽클리오 바로가기</a>
+                        </li>
+                    </ul>
+                </aside>
+                <button class="m_menu_btn" aria-label="메뉴 열기">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </header>
+        <main id="main" class="main">
+            <section class="subpage_header investors">
+                    <div class="subpage_title">
+                        <h2>
+                            재무정보
+                        </h2>
+                        <p>기업의 견고한 재무 상태를 한눈에 확인하세요.</p>
+                    </div>
+            </section>
+             <div class="fininfo_tab_btn tab_container" role="tablist">
+                 
+                    <button id="fininfo_tabs_1" class="fininfo_tabs on tab_line" role="tab" aria-selected="true" aria-controls="fininfo_tab1">재무 정보</button>
+                    <button id="fininfo_tabs_2" class="fininfo_tabs tab_line" role="tab" aria-selected="false" aria-controls="fininfo_tab2">주주 친화</button>
+                
+             </div>
+            <div class="fininfo_wrap">
+                <div class="fininfo_tab on" id="fininfo_tab1" aria-labelledby="fininfo_tabs_1" role="tabpanel">
+                    <section class="table_section">
+                        <h3>요약 손익계산서</h3>
+                        <p>(단위: 백만원)</p>
+                        <div class="scroll_container">
+                            <div class="scroll_wrap">
+                                <table class="profit_table">
+                                    <thead>
+                                        <tr>
+                                            <th class="item_name">항목</th>
+                                            <th>2024</th>
+                                            <th>2023</th>
+                                            <th>2022</th>
+                                            <th>2021</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="item_name">매출액</th>
+                                            <td>351,366</td>
+                                            <td>330,584</td>
+                                            <td>272,455</td>
+                                            <td>232,744</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">매출총이익</th>
+                                            <td>171,295</td>
+                                            <td>166,101</td>
+                                            <td>134,840</td>
+                                            <td>112,347</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">영업이익</th>
+                                            <td>24,693</td>
+                                            <td>33,810</td>
+                                            <td>17,882</td>
+                                            <td>13,903</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">법인세비용차감전순이익</th>
+                                            <td>32,331</td>
+                                            <td>36,075</td>
+                                            <td>15,700</td>
+                                            <td>12,421</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">당기순이익</th>
+                                            <td>27,156</td>
+                                            <td>27,319</td>
+                                            <td>10,129</td>
+                                            <td>9,267</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="table_section">
+                        <h3>요약 재무상태표</h3>
+                        <p>(단위: 백만원)</p>
+                        <div class="scroll_container">
+                            <div class="scroll_wrap">
+                                <table class="state_table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="item_name">항목</th>
+                                            <th>2024</th>
+                                            <th>2023</th>
+                                            <th>2022</th>
+                                            <th>2021</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th rowspan="3" class="item_name">자산</th>
+                                            <th class="item_name">유동자산</th>
+                                            <td>351,366</td>
+                                            <td>330,584</td>
+                                            <td>272,455</td>
+                                            <td>232,744</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">비유동자산</th>
+                                            <td>108,530</td>
+                                            <td>108,833</td>
+                                            <td>114,172</td>
+                                            <td>103,038</td>
+                                        </tr>
+                                        <tr class="border row_sum">
+                                            <th class="item_name">총 자산</th>
+                                            <td>108,530</td>
+                                            <td>108,833</td>
+                                            <td>114,172</td>
+                                            <td>103,038</td>
+                                        </tr>
+                                        <tr class="debt">
+                                            <th rowspan="3" class="item_name">부채</th>
+                                            <th class="item_name">유동부채</th>
+                                            <td>46,506</td>
+                                            <td>54,105</td>
+                                            <td>44,064</td>
+                                            <td>57,124</td>
+                                        </tr>
+                                        <tr class="debt">
+                                            <th class="item_name">비유동부채</th>
+                                            <td>15,028</td>
+                                            <td>11,765</td>
+                                            <td>9,446</td>
+                                            <td>9,693</td>
+                                        </tr>
+                                        <tr class="debt row_sum">
+                                            <th class="item_name">총 부채</th>
+                                            <td>61,534</td>
+                                            <td>65,869</td>
+                                            <td>53,509</td>
+                                            <td>66,817</td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="6" class="item_name">자본</th>
+                                            <th class="item_name">자본금</th>
+                                            <td>9,036</td>
+                                            <td>9,036</td>
+                                            <td>9,036</td>
+                                            <td>8,727</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">자본잉여금</th>
+                                            <td>91,634</td>
+                                            <td>91,481</td>
+                                            <td>91,481</td>
+                                            <td>76,930</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">기타자본</th>
+                                            <td>10,663</td>
+                                            <td>10,965</td>
+                                            <td>10,962</td>
+                                            <td>10,961</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">기타포괄손익누계액</th>
+                                            <td>151</td>
+                                            <td>69</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">이익잉여금</th>
+                                            <td>144,524</td>
+                                            <td>124,156</td>
+                                            <td>101,025</td>
+                                            <td>93,327</td>
+                                        </tr>
+                                        <tr class=" row_sum">
+                                            <th class="item_name">총자본</th>
+                                            <td>233,896</td>
+                                            <td>213,698</td>
+                                            <td>190,376</td>
+                                            <td>167,411</td>
+                                        </tr>
+                                        <tr class="total">
+                                            <th colspan="2" class="item_name">부채와 자본의 총계</th>
+                                            <td>295,426</td>
+                                            <td>279,568</td>
+                                            <td>243,885</td>
+                                            <td>234,228</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="fininfo_tab" id="fininfo_tab2" aria-labelledby="fininfo_tabs_2" role="tabpanel">
+                    <section class="bar_chart">
+                        <h3>배당금 추이</h3>
+                        <div class="chart_container">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </section>
+                    <section class="line_chart">
+                        <h3>배당성향 추이</h3>
+                        <div class="chart_container">
+                            <canvas id="lineChart"></canvas>
+                        </div>
+                    </section>
+                    <section class="table_section">
+                        <h3>주주환원 내역</h3>
+                        <div class="scroll_container">
+                            <div class="scroll_wrap">
+                                <table class="shareholder">
+                                    <thead>
+                                        <tr>
+                                            <th class="item_name">항목</th>
+                                            <th>2021</th>
+                                            <th>2022</th>
+                                            <th>2023</th>
+                                            <th>2024</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="item_name">1주당 배당금 (원)</th>
+                                            <td>150</td>
+                                            <td>200</td>
+                                            <td>400</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">총 배당금 (백만원)</th>
+                                            <td>2,534</td>
+                                            <td>3,502</td>
+                                            <td>7,004</td>
+                                            <td>7,010</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">(연결)당기순이익 (백만원)</th>
+                                            <td>9,267</td>
+                                            <td>10,129</td>
+                                            <td>27,319</td>
+                                            <td>27,156</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">배당 성향(%)</th>
+                                            <td>27.3</td>
+                                            <td>34.6</td>
+                                            <td>25.6</td>
+                                            <td>25.8</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="item_name">자기주식 수(주)</th>
+                                            <td>561,430</td>
+                                            <td>561,430</td>
+                                            <td>561,430</td>
+                                            <td>546,730</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+
+        </main>
+            <footer class="footer" id="footer">
+                <button type="button" id="backToTop" class="back_to_top">
+                <span>Top</span>
+            </button>
+                <div class="footer_top">
+                    <h2 class="hide">사이트 이용안내</h2>
+                    <div class="term">
+                        <h3 class="hide">약관 및 정책</h3>
+                        <ul>
+                            <li><a href="#none">이용약관</a></li>
+                            <li><a href="#none">개인정보 처리방침</a></li>
+                            <li><a href="#none">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="family_site">
+                        <h3><button class="family_btn">Family Site</button></h3>
+                        <ul>
+                            <li><a href="#none">클리오</a></li>
+                            <li><a href="#none">페리페라</a></li>
+                            <li><a href="#none">구달</a></li>
+                            <li><a href="#none">더마토리</a></li>
+                            <li><a href="#none">타입넘버</a></li>
+                            <li><a href="#none">심플레인</a></li>
+                            <li><a href="#none">힐링버드</a></li>
+                            <li><a href="#none">트루알엑스</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>서울시 성동구 왕십리로 66 (주)클리오</p>
+                    <p>고객상담실 : 080-080-1510</p>
+                    <p class="opening_hours">
+                        운영시간 :
+                        월~금: 10시~17시(점심시간:12시~14시), 주말 공휴일 휴무
+                    </p>
+                    <p>ⓒ Since 1996 CLIO COSMETICS, All Rights Reserved.</p>
+                </div>
+            </footer>
+    </div>
+
+    
+    
+    
+</body>
+</html>
